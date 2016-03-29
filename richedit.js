@@ -46,7 +46,7 @@ $(document).ready(function(){
 			trappedKeys.delete(e.which);
 			if (trappedKeys.size == 0) {
 				if (e.shiftKey) gesture ^= 0xFF;
-				var oldValue = $("#brailleInput").innerHTML();
+				var oldValue = $("#brailleInput").val();
 				var newCaretPos = $("#brailleInput").selectionStart + 1;
 				var brailleChar = String.fromCharCode(gesture | 0x2800);
 				$("#brailleInput").val(String.substr(oldValue,0,$("#brailleInput").selectionStart) + brailleChar + String.substr(oldValue, $("#brailleInput").selectionEnd));
