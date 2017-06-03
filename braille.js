@@ -66,7 +66,7 @@ var buttonUp = function(event) {
    		if (trappedButtons.has(dot)) {
             trappedButtons.delete(dot);
         }
-		if (trappedKeys.size == 0) {
+		if (trappedButtons.size == 0) {
 			//if (e.shiftKey) gesture ^= 0xFF;
 			typeChar()
 		}
